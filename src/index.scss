@@ -1,0 +1,61 @@
+/* Root Layout */
+.root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Search Box */
+.search-box {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+
+  button {
+    padding: 10px 18px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+
+    &:focus {
+      outline: 2px solid #0056b3;
+      outline-offset: 2px;
+    }
+
+    &:disabled {
+      background-color: #bbb;
+      cursor: not-allowed;
+    }
+  }
+}
+
+/* No Todos and Loading */
+.no-todos, .loading {
+  font-size: 18px;
+  color: #777;
+  margin-top: 30px;
+  text-align: center;
+}
