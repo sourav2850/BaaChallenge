@@ -14,7 +14,7 @@ export const TodoResults = () => {
   return (
     <div className="todo-results">
       <div className="task-count">
-        <span>Completed tasks: {completedTasks}</span>
+        <span>Completed tasks: {completedTasks} </span>
         <span>Remaining tasks: {remainingTasks}</span>
       </div>
     </div>

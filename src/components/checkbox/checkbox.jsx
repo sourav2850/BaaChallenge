@@ -20,13 +20,13 @@ export const Checkbox = ({
       />
       <span className={checked ? 'checkbox-checked' : ''}>{label}</span>
     </div>
-    <button
+    {/* <button
       type="button"
       className="checkbox-delete"
       onClick={onDelete}
       aria-label="Delete task" // Adding an accessible label for the delete button
     >
       x
-    </button>
+    </button> */}
   </div>
 );
