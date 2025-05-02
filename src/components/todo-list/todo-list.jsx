@@ -98,6 +98,12 @@ export const TodoList = ({ todos, setFilter }) => {
 
       {!viewMode && (
         <>
+          <div className="filter-buttons">
+            <button onClick={() => setFilter('all')}>All Tasks</button>
+            <button onClick={() => setFilter('completed')}>Completed</button>
+            <button onClick={() => setFilter('incomplete')}>Incomplete</button>
+          </div>
+
           <span className="todo-list-title">Things to do:</span>
 
           {todos.length ? (
@@ -180,12 +186,6 @@ export const TodoList = ({ todos, setFilter }) => {
             <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>
               Next
             </button>
-          </div>
-
-          <div className="filter-buttons">
-            <button onClick={() => setFilter('all')}>All Tasks</button>
-            <button onClick={() => setFilter('completed')}>Completed</button>
-            <button onClick={() => setFilter('incomplete')}>Incomplete</button>
           </div>
         </>
       )}

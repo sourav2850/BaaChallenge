@@ -56,8 +56,8 @@ const App = () => {
               />
             </div>
             <TodoForm />
-            <TodoList todos={filteredTodos} setFilter={setFilter} />
             <TodoResults todos={todos} />
+            <TodoList todos={filteredTodos} setFilter={setFilter} />
           </div>
         </div>
       </TodosContext.Provider>
